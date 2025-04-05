@@ -1,0 +1,25 @@
+/* This file adds the requisite utility classes for Tailwind to work. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-icon{
+    @apply
+        flex flex-1 flex-row
+        gap-x-2 mt-4
+        justify-center items-center
+        w-full min-w-[112px] min-h-16
+        rounded-full overflow-hidden
+    ;
+}
+.icon-label{
+    @apply
+        text-secondary;
+}
+
+.mysearch-bar{
+    @apply flex-row items-center
+    backdrop-blur-lg shadow-xl shadow-light-300
+    border-2 border-light-100/5
+    rounded-full px-4 py-0.5;
+}
